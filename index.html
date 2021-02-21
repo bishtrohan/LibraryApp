@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+  <title>School Library</title>
+</head>
+
+<body>
+
+  <div class="container my-10">
+
+    <div class="container main_heading " style="text-align: center;">
+      <h1>School Library</h1>
+    </div>
+    <form action="">
+
+      
+      <div class="mb-3">
+        <label for="bookName" class="form-label">Book Name</label>
+      <input type="text" class="form-control" id="bookName" placeholder="Enter book name" required>
+    </div>
+    <div class="mb-3">
+      <label for="authorName" class="form-label">Author Name</label>
+      <input type="text" class="form-control" id="authorName" placeholder="Enter author name" required>
+    </div>
+    <div class="mb-3">
+      <label for="submitDate" class="form-label">Date of submission</label>
+      <input type="date" name="" id="submitDate" required>
+    </div>
+    <div class="mb-3">
+      <label for="issueDate" class="form-label">Date of issue</label>
+      <input type="date" name="" id="issueDate" required>
+    </div>
+    <select class="form-select" aria-label="Default select example" id="category" required>
+      <option disabled selected value>Select category</option>
+      <option value="Sci-Fi">Sci-Fi</option>
+      <option value="Fiction">Fiction</option>
+      <option value="Biography">Biography</option>
+      <option value="Thriller">Thriller</option>
+      <option value="Philosophy">Philosophy</option>
+      <option value="Others">Others</option>
+    </select>
+    
+    <div class="mb-3 my-3">
+      <label for="exampleFormControlTextarea1" class="form-label" >Book Description</label>
+      <textarea class="form-control bookDescription" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    </div>
+    <button type="submit" id="submitBtn">submit</button>
+  </form>
+  <div class="container" style="overflow: auto;">
+    <table class="table table-info table-hover">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Book Name</th>
+          <th scope="col">Author Name</th>
+          <th scope="col">Date of Submission</th>
+          <th scope="col">Date of Issue</th>
+          <th scope="col">Category</th>
+          <th scope="col">Book Description</th>
+          <th scope="col">Delete Books</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  </div>
+ 
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+ <script src="app.js"></script>
+</body>
+
+</html>
